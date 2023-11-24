@@ -12,9 +12,17 @@
             <h1>Controles sobre los estilos</h1>
             <!-- Controles de estilos a implementar: Fuente, Tamaño letra, color de fondo   -->
             <div class="controlesEstilos">
-                <div class="left">
-                    <label for="color">Color de fondo de la página:</label>
-                    <input id="color" type="color"></input>
+                <div class="itemEstilo">
+                    <label class="estiloLabel" for="colorFondo">Color de fondo de la página:</label>
+                    <input class="estiloInput" id="colorFondo" type="color"></input>
+                </div>
+                <div class="itemEstilo">
+                    <label class="estiloLabel" for="tamaño">Tamaño de letra (Max 99):</label>
+                    <input class="estiloInput" id="tamaño" type="number" pattern="[0-9]{1-2}" maxlength="2" size="5px"></input>
+                </div>
+                <div class="itemEstilo">
+                    <label class="estiloLabel" for="colorLetra">Color de letra de la página:</label>
+                    <input class="estiloInput" id="colorLetra" type="color"></input>
                 </div>
             </div>
             <h1>Lista de Siniestros</h1>

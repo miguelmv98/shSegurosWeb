@@ -15,7 +15,22 @@ h1{
     text-align: center;
 }
 .controlesEstilos{
+    display: flex;
     width: 100%;
     background-color: antiquewhite;
     
+}
+.itemEstilo{
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: fit-content;
+    width: 33%;
+}
+.estiloLabel{
+    grid-row: 1;
+}
+
+.estiloInput{
+    grid-row: 2;
 }

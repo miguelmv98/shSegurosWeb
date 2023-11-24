@@ -4,8 +4,18 @@ body{
 .contenedor{
     width: 80%;
     display: flex;
+    flex-direction: column;
 }
 .leftMargin, .rightMargin
 {
     width: 10%;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+}
+.controlesEstilos{
+    width: 100%;
+    background-color: antiquewhite;
+    
 }

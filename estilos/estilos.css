@@ -5,6 +5,7 @@ body{
     width: 80%;
     display: flex;
     flex-direction: column;
+    background-color:deepskyblue;
 }
 .leftMargin, .rightMargin
 {
@@ -17,8 +18,9 @@ h1{
 .controlesEstilos{
     display: flex;
     width: 100%;
+    background-blend-mode: darken;
     background-color: antiquewhite;
-    
+    flex-wrap: wrap;
 }
 .itemEstilo{
     justify-content: center;
@@ -26,6 +28,8 @@ h1{
     grid-template-rows: 50% 50%;
     height: fit-content;
     width: 33%;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .estiloLabel{
     grid-row: 1;
@@ -33,4 +37,10 @@ h1{
 
 .estiloInput{
     grid-row: 2;
+    margin-right: auto;
+    margin-left: auto;
+}
+*{
+    font-family: Verdana;
+    font-size: 12;
 }

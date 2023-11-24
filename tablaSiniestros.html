@@ -14,15 +14,27 @@
             <div class="controlesEstilos">
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="colorFondo">Color de fondo de la página:</label>
-                    <input class="estiloInput" id="colorFondo" type="color"></input>
+                    <input class="estiloInput" id="colorFondo" type="color" value="aquamarine"/>
                 </div>
                 <div class="itemEstilo">
-                    <label class="estiloLabel" for="tamaño">Tamaño de letra (Max 99):</label>
-                    <input class="estiloInput" id="tamaño" type="number" pattern="[0-9]{1-2}" maxlength="2" size="5px"></input>
+                    <label class="estiloLabel" for="tamañoLetra">Tamaño de letra (Max 99):</label>
+                    <input class="estiloInput" id="tamañoLetra" type="number"  size="2" minlength="1" step="2" value="12"/>
                 </div>
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="colorLetra">Color de letra de la página:</label>
-                    <input class="estiloInput" id="colorLetra" type="color"></input>
+                    <input class="estiloInput" id="colorLetra" type="color" value="black"/>
+                </div>
+                <div class="itemEstilo">
+                    <label class="estiloLabel" for="colorLaterales">Color de laterales de la página:</label>
+                    <input class="estiloInput" id="colorLaterales" type="color" value="white"/>
+                </div>
+                <div class="itemEstilo">
+                    <label class="estiloLabel" for="fuenteLetra">Color de laterales de la página:</label>
+                    <select  class="estiloInput" size="1" id="fuenteLetra">
+                        <option value="Verdana">Verdana</options>
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                      </select>
                 </div>
             </div>
             <h1>Lista de Siniestros</h1>

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Tabla de siniestros</title>
         <script src="http://code.jquery.com/jquery latest.js "></script>
+        <script src="scripts/scripts.js"></script>
         <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
     </head>
     <body>
@@ -14,23 +15,23 @@
             <div class="controlesEstilos">
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="colorFondo">Color de fondo de la página:</label>
-                    <input class="estiloInput" id="colorFondo" type="color" value="aquamarine"/>
+                    <input class="estiloInput" id="colorFondo" type="color" value="#00bfff" onchange="modificarColorFondo()"/>
                 </div>
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="tamañoLetra">Tamaño de letra (Max 99):</label>
-                    <input class="estiloInput" id="tamañoLetra" type="number"  size="2" minlength="1" step="2" value="12"/>
+                    <input class="estiloInput" id="tamañoLetra" type="number"  size=2 min="1" max="99" step="2" value="12" onchange="modificarTamañoFuente()"/>
                 </div>
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="colorLetra">Color de letra de la página:</label>
-                    <input class="estiloInput" id="colorLetra" type="color" value="black"/>
+                    <input class="estiloInput" id="colorLetra" type="color" value="000000" onchange="modificarColorLetra()"/>
                 </div>
                 <div class="itemEstilo">
                     <label class="estiloLabel" for="colorLaterales">Color de laterales de la página:</label>
-                    <input class="estiloInput" id="colorLaterales" type="color" value="white"/>
+                    <input class="estiloInput" id="colorLaterales" type="color" value="#ffffff" onchange="modificarColorLaterales()"/>
                 </div>
                 <div class="itemEstilo">
-                    <label class="estiloLabel" for="fuenteLetra">Color de laterales de la página:</label>
-                    <select  class="estiloInput" size="1" id="fuenteLetra">
+                    <label class="estiloLabel" for="fuenteLetra">Fuente:</label>
+                    <select  class="estiloInput" size="1" id="fuenteLetra" onchange="modifiarFuente()">
                         <option value="Verdana">Verdana</options>
                         <option value="Arial">Arial</option>
                         <option value="Times New Roman">Times New Roman</option>

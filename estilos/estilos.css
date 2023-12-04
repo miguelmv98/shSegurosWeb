@@ -86,8 +86,6 @@ thead th:hover {
   border: none;
   color: white;
   padding: 14px 28px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 .textoMostrarOcultar {
   padding-left: 1.5rem;

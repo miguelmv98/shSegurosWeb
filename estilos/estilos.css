@@ -79,12 +79,8 @@ thead th:hover {
   flex-wrap: wrap;
   align-items: center;
 }
-.mostrar {
-  background-color: #d3d3d3;
-}
 .btn {
   border: none;
-  color: white;
   padding: 14px 28px;
 }
 .textoMostrarOcultar {

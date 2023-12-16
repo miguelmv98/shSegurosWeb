@@ -105,8 +105,8 @@ function activarOrdenacion() {
 }
 
 $(document).ready(function () {
-  $(".seccionOcultar button").on("click", function () {
-    const columnIndex = parseInt($(this).attr("id"));
+  $(".seccionOcultar input[type='checkbox']").on("change", function () {
+    const columnIndex = parseInt($(this).attr("id").replace("checkbox", ""));
     toggleColumn(columnIndex, this);
   });
 

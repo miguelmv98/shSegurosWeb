@@ -1,45 +1,88 @@
-body{
-    display: flex;
+body {
+  display: flex;
 }
-.contenedor{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    background-color:#00bfff;
+.contenedor {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #00bfff;
 }
-.leftMargin, .rightMargin
-{
-    width: 10%;
+.leftMargin,
+.rightMargin {
+  width: 10%;
 }
-h1{
-    justify-content: center;
-    text-align: center;
+h1 {
+  justify-content: center;
+  text-align: center;
 }
-.controlesEstilos{
-    display: flex;
-    width: 100%;
-    background-blend-mode: darken;
-    background-color: #faebd7;
-    flex-wrap: wrap;
+.controlesEstilos {
+  display: flex;
+  width: 100%;
+  background-blend-mode: darken;
+  background-color: #faebd7;
+  flex-wrap: wrap;
 }
-.itemEstilo{
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    height: fit-content;
-    width: 33%;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    font-family: Verdana;
-    color:#000000;
-    font-size: 12px;
+.itemEstilo {
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: fit-content;
+  width: 33%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: Verdana;
+  color: #000000;
+  font-size: 12px;
 }
-.estiloLabel{
-    grid-row: 1;
+.estiloLabel {
+  grid-row: 1;
 }
 
-.estiloInput{
-    grid-row: 2;
-    margin-right: auto;
-    margin-left: auto;
+.estiloInput {
+  grid-row: 2;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tablaSiniestros {
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+thead {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+th {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+td,
+th {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+thead th:hover {
+  background-color: rgba(200, 200, 200, var(--tw-bg-opacity));
+}
+.seccionOcultar {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.btn {
+  border: none;
+  padding: 14px 28px;
+}
+.textoMostrarOcultar {
+  padding-left: 1.5rem;
 }

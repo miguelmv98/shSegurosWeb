@@ -5,12 +5,28 @@ function modificarColorFondo(){
 
 function modificarTamañoFuente(){
     var tamañoLetra = document.getElementById("tamañoLetra").value;
-    document.querySelector(".itemEstilo").style.fontSize = tamañoLetra+"px";
+    var elementos = document.getElementsByClassName("itemEstilo");
+    for (var i = 0; i< elementos.length; i++){
+      elementos[i].style.fontSize = tamañoLetra+"px";
+    }
+    document.getElementById("tablaSiniestros").style.fontSize = tamañoLetra+"px";
+    var elementos2 = document.getElementsByClassName("seccionOcultar");
+    for (var i = 0; i< elementos2.length; i++){
+      elementos2[i].style.fontSize = tamañoLetra+"px";
+    }
 }
 
 function modificarColorLetra(){
     var colorSeleccionado = document.getElementById("colorLetra").value;
-    document.querySelector(".itemEstilo").style.color = colorSeleccionado;
+    var elementos = document.getElementsByClassName("itemEstilo");
+    for (var i = 0; i< elementos.length; i++){
+      elementos[i].style.color = colorSeleccionado;
+    }
+    document.getElementById("tablaSiniestros").style.color = colorSeleccionado;
+    var elementos2 = document.getElementsByClassName("seccionOcultar");
+    for (var i = 0; i< elementos2.length; i++){
+      elementos2[i].style.color = colorSeleccionado;
+    }
 }
 
 function modificarColorLaterales(){
@@ -21,7 +37,17 @@ function modificarColorLaterales(){
 
 function modificarFuente(){
     var fuente = document.getElementById("fuenteLetra").value;
-    document.querySelector(".itemEstilo").style.fontFamiliy = fuente;
+    var elementos = document.getElementsByClassName("itemEstilo");
+    for (var i = 0; i< elementos.length; i++){
+      elementos[i].style.setProperty(fontFamiliy, fuente);
+      
+      elementos[i].style.fontSize = 99+"px";
+    }
+    document.getElementById("tablaSiniestros").style.fontFamiliy = fuente;
+    var elementos2 = document.getElementsByClassName("seccionOcultar");
+    for (var i = 0; i< elementos2.length; i++){
+      elementos2[i].style.fontFamiliy = fuente;
+    }
 }
 
 window.addEventListener("load", function () {

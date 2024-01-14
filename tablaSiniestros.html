@@ -38,12 +38,27 @@
             </div>
             <div class="itemEstilo">
                 <label class="estiloLabel" for="fuenteLetra">Fuente:</label>
-                <select class="estiloInput" size="1" id="fuenteLetra" onchange="modifiarFuente()">
-                    <option value="Verdana">Verdana</options>
+                <select class="estiloInput" id="fuenteLetra" onchange="cambiandoFuente(this);">
+                    <option value="Times New Roman" elected="selected">Times New Roman</option>
                     <option value="Arial">Arial</option>
-                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="cursive">cursive</option>
                 </select>
             </div>
+            <script>
+
+                var cambiandoFuente = function modificarFuente(fontstyle){
+                                            var elementos = document.getElementsByClassName("itemEstilo");
+                                            for (var i = 0; i< elementos.length; i++){
+                                                elementos[i].style.fontFamiliy =  fontstyle.value;
+                                            }
+                                            document.getElementById("tablaSiniestros").style.fontFamiliy =  fontstyle.value;
+                                            var elementos2 = document.getElementsByClassName("seccionOcultar");
+                                            for (var i = 0; i< elementos2.length; i++){
+                                                elementos2[i].style.fontFamiliy =  fontstyle.value;
+                                            }
+                                        }
+
+            </script>
         </div>
         <h1>Lista de Siniestros</h1>
         <div class="seccionOcultar">
